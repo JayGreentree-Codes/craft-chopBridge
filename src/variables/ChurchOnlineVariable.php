@@ -3,7 +3,7 @@ namespace jaygreentreecodes\chopbridge\variables;
 
 use jaygreentreecodes\chopbridge\Plugin;
 
-class chopbridgeVariable
+class chop-bridgeVariable
 {
     public function getCurrentService(): ?array
     {
