@@ -9,11 +9,11 @@
   },
   "autoload": {
     "psr-4": {
-      "jaygreentreecodes\\churchonline\\": "src/"
+      "jaygreentreecodes\\chopbridge\\": "src/"
     }
   },
   "extra": {
-    "handle": "chop-bridge",
+    "handle": "chopbridge",
     "name": "ChOP Bridge",
     "developer": "JayGreentree Codes",
     "hasCpSettings": true
