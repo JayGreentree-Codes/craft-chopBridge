@@ -1,0 +1,27 @@
+{# Import Craft's built-in form utility macros #}
+{% import "_includes/forms" as forms %}
+
+<div class="church-online-settings">
+    
+    {# Section Header #}
+    <h2>{{ "Church Online Platform API Configuration"|t('app') }}</h2>
+    <p class="instructions">
+        Configure your connection details to hook your Craft website up to the Church Online Platform GraphQL API.
+    </p>
+
+    <hr>
+
+    {# Subdomain Text Field Macro #}
+    {{ forms.textField({
+        label: 'Platform Subdomain'|t('app'),
+        instructions: 'Enter your platform subdomain identifier. For example, if your live URL is <strong>mychurch.online.church</strong>, type <strong>mychurch</strong>.',
+        id: 'subdomain',
+        name: 'subdomain',
+        value: settings.subdomain,
+        errors: settings.getErrors('subdomain'),
+        required: true,
+        placeholder: 'mychurch',
+        autofocus: true
+    }) }}
+
+</div>
