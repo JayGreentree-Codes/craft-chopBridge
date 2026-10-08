@@ -1,5 +1,5 @@
 <?php
-namespace jaygreentreecodes\churchonline\models;
+namespace jaygreentreecodes\chopbridge\models;
 
 use craft\base\Model;
 

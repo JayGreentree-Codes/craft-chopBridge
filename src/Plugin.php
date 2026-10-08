@@ -1,11 +1,11 @@
 <?php
-namespace jaygreentreecodes\churchonline;
+namespace jaygreentreecodes\chopbridge;
 
 use craft\base\Plugin as BasePlugin;
 use craft\web\twig\variables\CraftVariable; // <-- Make sure this line is present!
-use jaygreentreecodes\churchonline\services\ApiService;
-use jaygreentreecodes\churchonline\variables\ChurchOnlineVariable;
-use jaygreentreecodes\churchonline\models\Settings;
+use jaygreentreecodes\chopbridge\services\ApiService;
+use jaygreentreecodes\chopbridge\variables\chopbridgeVariable;
+use jaygreentreecodes\chopbridge\models\Settings;
 use yii\base\Event; // <-- Make sure this line is present!
 use Craft;
 
@@ -25,7 +25,7 @@ class Plugin extends BasePlugin
             'apiService' => ApiService::class,
         ]);
 
-        // FIX: Add this event block so Twig recognizes craft.churchOnline!
+        // FIX: Add this event block so Twig recognizes craft.chopbridge!
         Event::on(
             CraftVariable::class,
             CraftVariable::EVENT_INIT,
@@ -33,8 +33,8 @@ class Plugin extends BasePlugin
                 /** @var CraftVariable $variable */
                 $variable = $event->sender;
                 
-                // This registers the variable so craft.churchOnline works in Twig
-                $variable->set('churchOnline', ChurchOnlineVariable::class);
+                // This registers the variable so craft.chopbridge works in Twig
+                $variable->set('chopbridge', chopbridgeVariable::class);
             }
         );
     }

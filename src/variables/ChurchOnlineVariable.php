@@ -1,9 +1,9 @@
 <?php
-namespace jaygreentreecodes\churchonline\variables;
+namespace jaygreentreecodes\chopbridge\variables;
 
-use jaygreentreecodes\churchonline\Plugin;
+use jaygreentreecodes\chopbridge\Plugin;
 
-class ChurchOnlineVariable
+class chopbridgeVariable
 {
     public function getCurrentService(): ?array
     {

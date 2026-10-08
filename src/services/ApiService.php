@@ -1,7 +1,7 @@
 <?php
-namespace jaygreentreecodes\churchonline\services;
+namespace jaygreentreecodes\chopbridge\services;
 
-use jaygreentreecodes\churchonline\Plugin;
+use jaygreentreecodes\chopbridge\Plugin;
 use craft\base\Component;
 use Craft;
 

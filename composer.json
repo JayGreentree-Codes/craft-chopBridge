@@ -1,6 +1,6 @@
 {
-  "name": "jaygreentreecodes/church-online",
-  "description": "Integrate Church Online Platform GraphQL API inside Craft CMS.",
+  "name": "jaygreentreecodes/chop-bridge",
+  "description": "Integrates Church Online Platform with Craft CMS.",
   "type": "craft-plugin",
   "version": "1.0.0",
   "license": "MIT",
@@ -13,9 +13,9 @@
     }
   },
   "extra": {
-    "handle": "church-online",
-    "name": "Church Online Platform",
-    "developer": "Custom Development",
+    "handle": "chop-bridge",
+    "name": "ChOP Bridge",
+    "developer": "JayGreentree Codes",
     "hasCpSettings": true
   }
 }
