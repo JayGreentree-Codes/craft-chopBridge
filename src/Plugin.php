@@ -2,11 +2,11 @@
 namespace jaygreentreecodes\chopbridge;
 
 use craft\base\Plugin as BasePlugin;
-use craft\web\twig\variables\CraftVariable; // <-- Make sure this line is present!
+use craft\web\twig\variables\CraftVariable;
 use jaygreentreecodes\chopbridge\services\ApiService;
 use jaygreentreecodes\chopbridge\variables\chopbridgeVariable;
 use jaygreentreecodes\chopbridge\models\Settings;
-use yii\base\Event; // <-- Make sure this line is present!
+use yii\base\Event; 
 use Craft;
 
 /**
@@ -25,7 +25,6 @@ class Plugin extends BasePlugin
             'apiService' => ApiService::class,
         ]);
 
-        // FIX: Add this event block so Twig recognizes craft.chopbridge!
         Event::on(
             CraftVariable::class,
             CraftVariable::EVENT_INIT,
@@ -44,11 +43,10 @@ class Plugin extends BasePlugin
         return new Settings();
     }
 
-    // Tell Craft which Twig template to render for the settings page
     protected function settingsHtml(): ?string
     {
         return Craft::$app->getView()->renderTemplate(
-            'church-online/_settings', 
+            'chopbridge/_settings', 
             [
                 'settings' => $this->getSettings()
             ]
