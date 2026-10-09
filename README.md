@@ -1,9 +1,10 @@
-# Church Online Platform API for Craft CMS
+# chopBridge
+A simple tool to make retrieving data from a Church Online Platform service from GraphQL
 
-Currently able to grab the GraphQL data for Services including:
+Current features include:
 - Event Start
 - Event End
 - Event Title
-- Event Embed for video
+- Event video
 
 # Wiki coming soon with better details and documentation for usage
