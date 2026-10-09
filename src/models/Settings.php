@@ -7,9 +7,6 @@ class Settings extends Model
 {
     public string $subdomain = '';
 
-    /**
-     * Changed from defineRules() to rules() for Craft 4/5 compatibility
-     */
     public function rules(): array
     {
         return [

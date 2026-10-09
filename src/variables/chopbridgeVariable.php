@@ -23,9 +23,6 @@ class chopbridgeVariable
         return Plugin::getInstance()->apiService->query($query);
     }
 
-    /**
-     * Fallback strategy: Safely fetch the single upcoming event string
-     */
     public function getNextEvent(): ?array
     {
         $query = '
@@ -40,8 +37,7 @@ class chopbridgeVariable
                 }
             }
         ';
-        
-        // This executes cleanly without returning null
+
         return Plugin::getInstance()->apiService->query($query);
     }
 }
