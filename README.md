@@ -1,5 +1,5 @@
 # chopBridge
-A simple tool to make retrieving data from a Church Online Platform service from GraphQL
+A simple tool to make retrieving data from Church Online Platform GraphQL
 
 Current features include:
 - Event Start
